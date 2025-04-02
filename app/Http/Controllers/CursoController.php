@@ -13,6 +13,17 @@ class CursoController extends Controller
         return view('welcome', ['name' => 'Liliana']);
     }
 
+    public function index(){
+        $name= 'Liliana';
+        $lastneme = 'Reyes';
+        $age = 25;
+        // return view('layout.child', ['name' => $name, 'lastname' => $lastneme, 'age' => $age]);
+        //return view('layout.child') ->with('name', $name)->with('lastname', $lastneme)->with('age', $age);
+        return view('layout.child', compact('name', 'lastname', 'age'));
+    }
+
+
+
     public function sumar($num1, $num2){
         return view('curso', ['La suma es: ' => $num1 + $num2]);
     }

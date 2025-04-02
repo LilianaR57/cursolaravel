@@ -4,15 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class AdminUserController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $num=7;
-        return view('directivas', compact('num'));
+        //
     }
 
     /**
@@ -20,7 +19,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -36,7 +35,7 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        //
+        dd($id);
     }
 
     /**
@@ -44,7 +43,7 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        dd($id);
     }
 
     /**
